@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 
 <!--Page Title-->
-<title>The Awan Villas - Seminyak Bali</title>
+<title>Duaraka</title>
 
 <!--Meta Keywords and Description-->
 <meta name="keywords" content="">

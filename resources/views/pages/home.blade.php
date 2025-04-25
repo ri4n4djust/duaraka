@@ -2,7 +2,7 @@
 
 
 @section('meta')
-    <title>The Awan Villa - Seminyak</title>
+    <title>Dua Raka</title>
     <meta content="best villa in bali" name="description">
     <meta content="bali room booking, car rental bali, bali management property" name="keywords">
 @endsection
