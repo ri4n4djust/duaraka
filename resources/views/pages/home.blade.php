@@ -3,8 +3,13 @@
 
 @section('meta')
     <title>Dua Raka</title>
-    <meta content="best villa in bali" name="description">
-    <meta content="bali room booking, car rental bali, bali management property" name="keywords">
+    <meta content="Duaraka mep cunstructions service" name="description">
+    <meta content="Industrial MEP services, Best MEP contractors for hotels, HVAC installation and maintenance" name="keywords">
+    <meta property="og:title" content="Dua Raka">
+    <meta property="og:description" content="Duaraka mep cunstructions service.">
+    <meta property="og:image" content="{{ asset('assets/images/ogfoto.png') }}">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="website">
 @endsection
 
 @section('content')
