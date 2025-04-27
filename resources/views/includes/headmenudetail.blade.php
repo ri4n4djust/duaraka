@@ -1,71 +1,44 @@
-<header id="banner-wd" class="scrollto clearfix" style="background-image: url('{{ asset('storage/banner/' . $pages->image) }}'); ">
-    <div id="header" class="nav-collapse" style="z-index: 2;">
-        <div class="row clearfix">
-            <div class="col-1">
-
-                <!--Logo-->
-                <div id="logo">
-                    
-                    <!--Logo that is shown on the banner-->
-                    <img src="{{asset('assets/images/logo.png')}}" id="banner-logo" alt="Landing Page"/>
-                    <!-- <h1>The Awan Villas</h1>  -->
-                    <!--End of Banner Logo-->
-
-                    <!--The Logo that is shown on the sticky Navigation Bar-->
-                    <img src="{{asset('assets/images/logo-2.png')}}" id="navigation-logo" alt="Landing Page"/>
-                    <!--End of Navigation Logo-->
-
+<header class="section page-header">
+    <!-- RD Navbar-->
+    <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-minimal" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+        <div class="rd-navbar-main-outer">
+            <div class="rd-navbar-main">
+            <!-- RD Navbar Panel-->
+            <div class="rd-navbar-panel">
+                <!-- RD Navbar Toggle-->
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
+                <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="/"><img src="{{asset('assets/images/logo-default-176x28.png')}}" alt="" width="176" height="28" srcset="{{asset('assets/images/logo-default-352x56.png')}} 2x"/></a>
+            </div>
+            <div class="rd-navbar-main-element">
+                <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
+                <!-- RD Navbar Nav-->
+                <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="/">Home</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/about-us">About Us</a></li>
+                    <!-- <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Typography</a> -->
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/on-progress">On Progres Projects</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/finish">Finish Projects</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="/contact">Contacts</a></li>
+                </ul>
                 </div>
-                <!--End of Logo-->
-
-                <aside>
-
-                    <!--Social Icons in Header-->
-                    <ul class="social-icons">
-                        <li>
-                            <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
-                                <i class="fa fa-facebook fa-3x"></i><span>Facebook</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" title="Twitter" href="http://www.twitter.com/username">
-                                <i class="fa fa-twitter fa-3x"></i><span>Twitter</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
-                                <i class="fa fa-instagram fa-3x"></i><span>Instagram</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <!--End of Social Icons in Header-->
-
-                </aside>
-
-                <!--Main Navigation-->
-                <nav id="nav-main">
-                    <ul>
-                        <li ><a  href="/">Home</a></li>
-                        <li >
-                            <a  href="#">VILLAS</a>
-                            <ul>
-                                <li><a href="/one-bedroom">One Bed Room</a></li>
-                                <li><a href="/two-bedroom">Two Bed Room</a></li>
-                            </ul>
-                        </li>
-                        <!-- <li ><a href="/dining">DINING</a></li> -->
-                        <li ><a  href="/provide-services">Provided Services</a></li>
-                        <li ><a  href="/gallery">GALLERY</a></li>
-                        <li><a href="/special-offers">SPECIAL OFFERS</a></li>
-                        <li ><a  href="/about-us">About Us</a></li>
-                    </ul>
-                </nav>
-                <!--End of Main Navigation-->
-
-                <div id="nav-trigger"><span></span></div>
-                <nav id="nav-mobile"></nav>
-
+            </div>
             </div>
         </div>
-    </div><!--End of Header-->
+        </nav>
+    </div>
 </header>
+<!-- Breadcrumbs-->
+<section class="breadcrumbs-custom bg-image context-dark" style="background-image: url({{asset('assets/images/breadcrumbs-image-1.jpg')}});">
+    <div class="breadcrumbs-custom-inner">
+        <div class="container breadcrumbs-custom-container">
+        <div class="breadcrumbs-custom-main">
+            <h6 class="breadcrumbs-custom-subtitle title-decorated">Project Detail</h6>
+        </div>
+        <ul class="breadcrumbs-custom-path">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Detail</li>
+        </ul>
+        </div>
+    </div>
+</section>

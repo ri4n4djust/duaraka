@@ -56,43 +56,21 @@ require __DIR__.'/auth.php';
 
 Route::get('/', [App\Http\Controllers\villaController::class , 'home'])->name('home');
 Route::get('/admin-slide', [App\Http\Controllers\galleryController::class , 'dataDasboard'])->name('admin.dataDasboard');
-Route::get('/one-bedroom', [App\Http\Controllers\villaController::class , 'oneBedroom']);
-Route::get('/two-bedroom', [App\Http\Controllers\villaController::class , 'twoBedroom']);
 
-Route::get('/dining', [App\Http\Controllers\villaController::class , 'dining']);
 Route::get('/gallery', [App\Http\Controllers\villaController::class , 'gallery']);
 Route::get('/provide-services', [App\Http\Controllers\villaController::class , 'services']);
-Route::get('/special-offers', [App\Http\Controllers\villaController::class , 'specialOffers']);
+
+Route::get('/project-detail', [App\Http\Controllers\projectController::class , 'projectDetail']);
 Route::get('/about-us', [App\Http\Controllers\villaController::class , 'aboutUs']);
 
 Route::get('/sitemap', function(){
     $sitemap = Sitemap::create()
-    ->add(Url::create('/one-bedroom'))
-    ->add(Url::create('/two-bedroom'))
-    ->add(Url::create('/dining'))
     ->add(Url::create('/gallery'))
     ->add(Url::create('/provide-services'))
     ->add(Url::create('/about-us'));
 
     $sitemap->writeToFile(public_path('sitemap.xml'));
    
-    // $book = Booking::all();
-    // foreach ($book as $book) {
-    //     $sitemap->add(Url::create("/bookings/{$book->slug}"));
-    // }
-    // $sitemap->writeToFile(public_path('sitemap.xml'));
-
-    // $activities = DB::table('activities')->get();
-    // foreach ($activities as $act) {
-    //     $sitemap->add(Url::create("/activities/{$act->slug}"));
-    // }
-    // $sitemap->writeToFile(public_path('sitemap.xml'));
-
-    // $destinasi = DB::table('destinations')->get();
-    // foreach ($destinasi as $des) {
-    //     $sitemap->add(Url::create("/destinations/{$des->slug}"));
-    // }
-    // $sitemap->writeToFile(public_path('sitemap.xml'));
 
     // $tour = TourPackage::all();
     // foreach ($tour as $tur) {

@@ -9,410 +9,297 @@
 
 @section('content')
 
-
-
-
-   
-<section id="about" class="introduction scrollto">
-  
-
-  <div class="row clearfix">
-
-      <div class="tengah">
-          <div class="section-heading">
-              <h2 style="font-family:'MAIAN';font-weight: bold;">- Welcome to The Awan Villas Seminyak - </h2>
-              <p class="section-subtitle">
-Come and indulge in our little slice of heaven. Inspired by the essence of "Awan," meaning cloud, our villas embody serenity, tranquility, and comfort for every guest. Designed with spacious and open layouts, our villas are perfect for relaxation, sunbathing, and quality time with loved ones.
-</p><p class="section-subtitle">Surrounded by lush green gardens and a beautifully landscaped outdoor pool, our villas offer a peaceful and calming retreat. Experience the ultimate getaway in Seminyak, where every moment is a chance to unwind and rejuvenate.
-</p>
-<button class="btn btn-open hidden">Open Modal</button>
-          </div>
-
+<!-- Projects - Modern Layout-->
+<section class="section section-lg bg-default">
+  <div class="container">
+    <div class="row row-50">
+      <div class="col-12 text-center">
+        <h3 class="section-title wow-outer"><span class="wow slideInUp">Ongoing Projects</span></h3>
       </div>
-  </div>
-</section>
-
-<style>
-
-.modal {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* gap: 0.4rem; */
-  /* width: 450px; */
-  /* padding: 1.3rem; */
-  /* min-height: 250px; */
-  position: absolute;
-  z-index: 5;
-  top: 4%;
-  background-color: white;
-  border: 1px solid #ddd;
-  /* border-radius: 15px; */
-  margin: 0 25%;
-}
-
-.modal .flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.modal input {
-  padding: 0.7rem 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 0.9em;
-}
-
-.modal p {
-  font-size: 0.9rem;
-  color: #777;
-  margin: 0.4rem 0 0.2rem;
-}
-
-button {
-  cursor: pointer;
-  border: none;
-  font-weight: 600;
-}
-
-.btn-open {
-  position: absolute;
-  bottom: 150px;
-}
-
-.btn-close {
-  transform: translate(10px, -20px);
-  padding: 0.5rem 0.7rem;
-  background: #eee;
-  border-radius: 50%;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(3px);
-  z-index: 3;
-}
-
-.hidden {
-  display: none;
-}
-
-    </style>
-
-<div class="modal hidden">
-  <div >
-    <button class="btn-close ">⨉</button>
-    <button class="button btn-tutup hidden">Close</button>
-  </div>
-  <div>
-    
-    @foreach($promos as $item)
-        
-        <!--Content Section-->
-        <div class="scrollto">
-
-          <div class="row no-padding-bottom">
-            
-
-              <div class="col-1">
-                <img src="{{ asset('images/' . $item->image) }}" alt="{{ $item->title }}" />
-                  <!-- <div class="section-heading"> -->
-                      <!-- <h2 style="font-family:'MAIAN';">{{ $item->title }}</h2> -->
-                  <!-- </div> -->
-                  <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
-              </div>
-
+      <div class="col-12 isotope-wrap">
+        <div class="isotope offset-top-2" data-isotope-layout="masonry" data-lightgallery="group" data-lg-thumbnail="false">
+          <div class="row row-30">
+            <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
+                <!-- Thumbnail Corporate-->
+                <article class="thumbnail-corporate wow slideInDown"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-1-370x256.jpg')}}" alt="" width="370" height="256"/>
+                  <div class="thumbnail-corporate-caption">
+                    <p class="thumbnail-corporate-title"><a href="/project-detail">Project 1</a></p>
+                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-1.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
+                  </div>
+                  <div class="thumbnail-corporate-dummy"></div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
+                <!-- Thumbnail Corporate-->
+                <article class="thumbnail-corporate thumbnail-corporate-lg wow slideInDown"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-2-370x464.jpg')}}" alt="" width="370" height="464"/>
+                  <div class="thumbnail-corporate-caption">
+                    <p class="thumbnail-corporate-title"><a href="#">Project 2</a></p>
+                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-2.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
+                  </div>
+                  <div class="thumbnail-corporate-dummy"></div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
+                <!-- Thumbnail Corporate-->
+                <article class="thumbnail-corporate wow slideInUp"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-3-370x256.jpg')}}" alt="" width="370" height="256"/>
+                  <div class="thumbnail-corporate-caption">
+                    <p class="thumbnail-corporate-title"><a href="#">Project 3</a></p>
+                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-3.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
+                  </div>
+                  <div class="thumbnail-corporate-dummy"></div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
+                <!-- Thumbnail Corporate-->
+                <article class="thumbnail-corporate thumbnail-corporate-lg wow slideInUp"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-4-370x464.jpg')}}" alt="" width="370" height="464"/>
+                  <div class="thumbnail-corporate-caption">
+                    <p class="thumbnail-corporate-title"><a href="#">Project 4</a></p>
+                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-4.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
+                  </div>
+                  <div class="thumbnail-corporate-dummy"></div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
+                <!-- Thumbnail Corporate-->
+                <article class="thumbnail-corporate thumbnail-corporate-lg wow slideInDown"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-6-370x464.jpg')}}" alt="" width="370" height="464"/>
+                  <div class="thumbnail-corporate-caption">
+                    <p class="thumbnail-corporate-title"><a href="#">Project 5</a></p>
+                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-6.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
+                  </div>
+                  <div class="thumbnail-corporate-dummy"></div>
+                </article>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 isotope-item wow-outer">
+                <!-- Thumbnail Corporate-->
+                <article class="thumbnail-corporate wow slideInDown"><img class="thumbnail-corporate-image" src="{{asset('assets/images/gallery-masonry-5-370x256.jpg')}}" alt="" width="370" height="256"/>
+                  <div class="thumbnail-corporate-caption">
+                    <p class="thumbnail-corporate-title"><a href="#">Project 6</a></p>
+                    <p>I offer high-quality photography &amp; retouch services to individual and corporate clients all over the US.</p><a class="thumbnail-corporate-link" href="{{asset('assets/images/gallery-original-5.jpg')}}" data-lightgallery="item"><span class="icon mdi mdi-magnify"></span><span class="icon mdi mdi-magnify"></span></a>
+                  </div>
+                  <div class="thumbnail-corporate-dummy"></div>
+                </article>
+            </div>
           </div>
-          <a href="{{ $item->link }}" class="button">Learn More</a>
         </div>
-        <!--End of Content Section-->
-        
-    @endforeach
-  </div>
-
-  
-</div>
-
-<div class="overlay hidden"></div>
-
-<script>
-  const modal = document.querySelector(".modal");
-  const overlay = document.querySelector(".overlay");
-  const btnOpen = document.querySelector(".btn-open");
-  const btnClose = document.querySelector(".btn-close");
-  const btnTutup = document.querySelector(".btn-tutup");
-
-  btnOpen.addEventListener("click", function () {
-    modal.classList.remove("hidden");
-    overlay.classList.remove("hidden");
-  });
-
-  btnClose.addEventListener("click", function () {
-    modal.classList.add("hidden");
-    overlay.classList.add("hidden");
-  });
-  btnTutup.addEventListener("click", function () {
-    modal.classList.add("hidden");
-    overlay.classList.add("hidden");
-  });
-  document.addEventListener('DOMContentLoaded', function() {
-    // alert("Ready!");
-    if ({{ $promos->isNotEmpty() }}) {
-      modal.classList.remove("hidden");
-      overlay.classList.remove("hidden");
-    }
-  }, false);
-  </script>
-<!--Villa-->
-<section id="villas" class="scrollto clearfix">
-  <div class="row clearfix">
-
-      <div class="col-2">
-
-          <div class="box-villas wow fadeInUp" data-wow-delay="0.1s">
-              <h2 style="font-family:'MAIAN';">One Bedroom Villas with Private Pool</h2>
-              <p >Experience the ultimate in luxury and relaxation in our stunning One Bedroom Villas with Private Pool.</p>
-              <a href="/one-bedroom" class="button">More Details <i class="fa fa-play" aria-hidden="true"></i></a>
-              @php
-                $firstImage = $galeries->where('id_album', 1)->first();
-              @endphp
-              @if($firstImage)
-                <img src="{{ asset('storage/images/' . $firstImage->nama_foto) }}" alt="{{ $firstImage->nama_foto }}">
-              @endif
-          </div>
-          
       </div>
-
-      <div class="col-2">
-
-          <div class="box-villas wow fadeInUp" data-wow-delay="0.1s">
-              <h2 style="font-family:'MAIAN';">Two Bedroom Villas with Private Pool</h2>
-              <p >Experience the ultimate in luxury and relaxation in our stunning Two Bedroom Villas with Private Pool.</p>
-              <a href="/two-bedroom" class="button">More Details <i class="fa fa-play" aria-hidden="true"></i></a>
-              @php
-                $firstImage = $galeries->where('id_album', 2)->first();
-              @endphp
-              @if($firstImage)
-                <img src="{{ asset('storage/images/' . $firstImage->nama_foto) }}" alt="{{ $firstImage->nama_foto }}">
-              @endif
-          </div>
-          
-      </div>
-
+    </div>
   </div>
 </section>
-<!--End of Villa-->
-
-<!--Content Section-->
-<div id="services" class="scrollto clearfix">
-
-  <div class="row no-padding-bottom clearfix">
-
-      <div class="tengah">
-          <div class="section-heading">
-              <h2 style="font-family:'MAIAN';font-weight: bold;">- Provided Services -</h2>
+<!-- Advantages and Achievements-->
+<section class="section section-lg text-center bg-default">
+  <div class="container">
+    <h3 class="section-title wow-outer"><span class="wow slideInUp">About Us</span></h3>
+    <p class="wow-outer"><span class="text-width-1 wow slideInDown">With over 10 years of experience in the industry, we have successfully completed projects ranging from commercial buildings to industrial facilities. Our team consists of highly skilled engineers and technicians dedicated to delivering high-quality MEP systems.</span></p>
+    <div class="row row-50">
+      <div class="col-6 col-md-3 wow-outer">
+        <!-- Counter Minimal-->
+        <article class="counter-minimal wow slideInUp" data-wow-delay=".1s">
+          <div class="counter-minimal-icon linearicons-mustache-glasses"></div>
+          <div class="counter-minimal-main">
+            <div class="counter">365</div>
           </div>
-
+          <h5 class="counter-minimal-title">Finish Project</h5>
+        </article>
       </div>
-
-      <!--Content of the Right Side-->
-      <div class="col-2 wow fadeInLeft">
-          <div class="section-heading">
-              <h2 style="font-family:'MAIAN';">●	In-Villa Spa</h2>
-              <p class="section-subtitle">Indulge in the ultimate relaxation experience with our In-Villa Spa services. Enjoy rejuvenating treatments in the comfort and privacy of your own villa.</p>
+      <div class="col-6 col-md-3 wow-outer">
+        <!-- Counter Minimal-->
+        <article class="counter-minimal wow slideInUp" data-wow-delay=".1s">
+          <div class="counter-minimal-icon linearicons-camera2"></div>
+          <div class="counter-minimal-main">
+            <div class="counter">156</div>
           </div>
-          <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
+          <h5 class="counter-minimal-title">Ongoing Projects</h5>
+        </article>
       </div>
-      <!--End Content Right Side-->
-
-      <div class="col-2 wow fadeInRight">
-          <img src="{{asset('assets/images/spa.jpg')}}" alt="Dancer"/>
-      </div>
-
-      <!--Content of the Right Side-->
-      <div class="col-3 wow fadeInLeft">
-      <img src="{{asset('assets/images/floating.jpg')}}" alt="Dancer"/>
-          <div class="section-heading">
-              <h2 style="font-family:'MAIAN';">●	Floating Breakfast</h2>
-              <p class="section-subtitle">Start your day in paradise with our signature Floating Breakfast experience. Indulge in a Delicious Breakfast Enjoy a mouth-watering breakfast, carefully prepared by our chefs, and served to you in the comfort of your own private pool.
-              </p>
+      <div class="col-6 col-md-3 wow-outer">
+        <!-- Counter Minimal-->
+        <article class="counter-minimal wow slideInUp" data-wow-delay=".1s">
+          <div class="counter-minimal-icon linearicons-shutter"></div>
+          <div class="counter-minimal-main">
+            <div class="counter">10</div>
           </div>
-          <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
+          <h5 class="counter-minimal-title">Years of Experience</h5>
+        </article>
       </div>
-      <!--End Content Right Side-->
-
-      <!-- <div class="col-6 wow fadeInRight">
-          <img src="{{asset('assets/images/dining.jpg')}}" alt="Dancer"/>
-      </div> -->
-
-      <div class="col-3 wow fadeInLeft">
-      <img src="{{asset('assets/images/romantic.jpg')}}" alt="Dancer"/>
-          <div class="section-heading">
-              <h2 style="font-family:'MAIAN';">●	Romantic Dinner</h2>
-              <p class="section-subtitle">Celebrate love and romance with a unforgettable dinner experience under the stars.</p>
+      <div class="col-6 col-md-3 wow-outer">
+        <!-- Counter Minimal -->
+        <article class="counter-minimal wow slideInUp" data-wow-delay=".1s">
+          <div class="counter-minimal-icon linearicons-picture"></div>
+          <div class="counter-minimal-main">
+            <div class="counter">392</div>
           </div>
-          <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
+          <h5 class="counter-minimal-title">Annual Clients</h5>
+        </article>
       </div>
-
-      <div class="col-3 wow fadeInLeft">
-      <img src="{{asset('assets/images/honeymoon.jpg')}}" alt="Dancer"/>
-          <div class="section-heading">
-              <h2 style="font-family:'MAIAN';">●	Honeymoon Decoration</h2>
-              <p class="section-subtitle">Make your dream honeymoon even more unforgettable with our romantic decoration packages.
-              Transform your villa into a love nest with our beautifully crafted decoration packages
-              </p>
-          </div>
-          <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
-      </div>
-
-
-  </div>
-
-
-</div>
-<!--End of Content Section-->
-
-
-  <!--Gallery-->
-<aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery data-featherlight-filter="a">
-      <div class="tengah">
-          <div class="section-heading">
-              <h2 style="font-family:'MAIAN';font-weight: bold;">- Foto Gallery -</h2>
-          </div>
-
-      </div>
-      <div class="gallery-categories">
-        <button class="button" onclick="filterGallery('all')">All</button>
-        @foreach($albums as $item)
-          <button class="button" onclick="filterGallery('{{$item->id}}')">{{ $item->nama_album }}</button>
-        @endforeach
-      </div>
-
-      <script>
-        function filterGallery(category) {
-          var items = document.querySelectorAll('#gallery a');
-          items.forEach(function(item) {
-            if (category === 'all' || item.classList.contains(category)) {
-              item.style.display = 'block';
-            } else {
-              item.style.display = 'none';
-            }
-          });
-        }
-      </script>
-      <div class="box-villas wow fadeInUp" data-wow-delay="0.1s">
-        @foreach($galeries as $item)
-          <a href="{{ asset('storage/images/' . $item->nama_foto) }}" data-featherlight="image" class="col-3 wow fadeIn {{$item->id_album}}"
-            data-wow-delay="0.2s">
-            <img src="{{ asset('storage/images/' . $item->nama_foto) }}" alt="{{ $item->nama_foto }}"/>
-          </a>
-        @endforeach
-      </div>
-
-</aside>
-  <!--End of Gallery-->
-
-<!--Content Section-->
-<!-- 
-<div id="services" class="scrollto clearfix">
-
-  <div class="row no-padding-bottom clearfix">
-
-      <div class="tengah">
-          <div class="section-heading">
-              <h2 style="font-family:'MAIAN';font-weight: bold;">- SPA -</h2>
-          </div>
-
-      </div>
-
-      <div class="col-2 wow fadeInRight">
-          <img src="{{asset('assets/images/spa.jpg')}}" alt="Dancer"/>
-      </div>
-
-      <div class="col-2 wow fadeInLeft">
-          <div class="section-heading">
-              <h2 class="section-title">In Villa Spa</h2>
-              <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!</p>
-          </div>
-          <a href="#" data-videoid="UYJ5IjBRlW8" data-videosite="youtube" class="button video link-lightbox">
-              WATCH VIDEO <i class="fa fa-play" aria-hidden="true"></i>
-          </a>
-      </div>
-  </div>
-</div> -->
-
-<!--End of Content Section-->
-
-<!--Clients-->
-<!-- <section id="clients" class="scrollto clearfix">
-  <div class="row clearfix">
-
-      <div class="col-3">
-
-          <div class="section-heading">
-              <h2 class="section-title">Best Villa Facilities</h2>
-              <p class="section-subtitle">Some of ouf villa Facilities</p>
-          </div>
-
-      </div>
-
-      <div class="col-2-3">
-
-          <a href="#" class="col-3">
-              <img src="{{asset('assets/images/icon/pool.png')}}" wi alt="Company"/>
-              <div class="client-overlay"><span>Private Pool Size: 7m x 3m x 1,5m</span></div>
-          </a>
-          <a href="#" class="col-3">
-          <img src="{{asset('assets/images/icon/desk.png')}}" alt="Company"/>
-              <div class="client-overlay"><span>24Hour Front Office</span></div>
-          </a>
-          <a href="#" class="col-3">
-          <img src="{{asset('assets/images/icon/wifi.png')}}" alt="Pool"/>
-              <div class="client-overlay"><span>High Spped Wifi</span></div>
-          </a>
-          <a href="#" class="col-3">
-          <img src="{{asset('assets/images/icon/villa.png')}}" alt="Pool"/>
-              <div class="client-overlay"><span>High Spped Wifi</span></div>
-          </a>
-          <a href="#" class="col-3">
-          <img src="{{asset('assets/images/icon/plug.png')}}" alt="Pool"/>
-              <div class="client-overlay"><span>High Spped Wifi</span></div>
-          </a>
-          <a href="#" class="col-3">
-          <img src="{{asset('assets/images/icon/bed.png')}}" alt="Pool"/>
-              <div class="client-overlay"><span>High Spped Wifi</span></div>
-          </a>
-          <a href="#" class="col-3">
-          <img src="{{asset('assets/images/icon/door.png')}}" alt="Pool"/>
-              <div class="client-overlay"><span>High Spped Wifi</span></div>
-          </a>
-
-      </div>
-
-  </div>
-</section> -->
-  <!--End of Clients-->
-
-
-
-<!--maps-->
-<section id="maps" class="scrollto clearfix">
-  <div class="row-maps clearfix">
-
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.1950637291725!2d115.15047537590551!3d-8.672991588291344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2476d6fd93ac5%3A0x336afb89db0054f2!2sThe%20Awan%20Villas!5e0!3m2!1sid!2sid!4v1737874401447!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+    </div>
   </div>
 </section>
-<!--End of maps-->
-   
+<section class="section section-lg">
+  <div class="container">
+    <div class="row row-50 justify-content-lg-between offset-top-1">
+      <div class="col-12">
+        <h3 class="section-title text-center wow-outer"><span class="wow slideInDown">Frequently Asked Questions</span></h3>
+      </div>
+      <div class="col-lg-7 col-xl-6">
+        <!-- Bootstrap collapse-->
+        <div class="card-group-custom card-group-corporate wow-outer" id="accordion1" role="tablist" aria-multiselectable="false">
+            
+            <!-- Bootstrap card-->
+            <article class="card card-custom card-corporate wow fadeInDown" data-wow-delay=".1s">
+              <div class="card-header" id="accordion1-heading-2" role="tab">
+                <div class="card-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse-2" aria-controls="accordion1-collapse-2" aria-expanded="false">Do you provide engineering design services?
+                    <div class="card-arrow"></div></a></div>
+              </div>
+              <div class="collapse" id="accordion1-collapse-2" role="tabpanel" aria-labelledby="accordion1-heading-2">
+                <div class="card-body">
+                  <p>Yes, our team includes experienced engineers who design efficient and cost-effective MEP systems tailored to your project needs.</p>
+                </div>
+              </div>
+            </article>
+            <!-- Bootstrap card-->
+            <article class="card card-custom card-corporate wow fadeInDown" data-wow-delay=".15s">
+              <div class="card-header" id="accordion1-heading-3" role="tab">
+                <div class="card-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse-3" aria-controls="accordion1-collapse-3" aria-expanded="false">How do you ensure compliance with local regulations?
+                    <div class="card-arrow"></div></a></div>
+              </div>
+              <div class="collapse" id="accordion1-collapse-3" role="tabpanel" aria-labelledby="accordion1-heading-3">
+                <div class="card-body">
+                  <p>We strictly adhere to industry standards and local building codes, ensuring all installations meet safety and efficiency requirements.</p>
+                </div>
+              </div>
+            </article>
+            <!-- Bootstrap card-->
+            <article class="card card-custom card-corporate wow fadeInDown" data-wow-delay=".2s">
+              <div class="card-header" id="accordion1-heading-4" role="tab">
+                <div class="card-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse-4" aria-controls="accordion1-collapse-4" aria-expanded="false">Can you provide a detailed cost estimate?
+                    <div class="card-arrow"></div></a></div>
+              </div>
+              <div class="collapse" id="accordion1-collapse-4" role="tabpanel" aria-labelledby="accordion1-heading-4">
+                <div class="card-body">
+                  <p>Absolutely! We offer transparent pricing and detailed cost breakdowns to help you plan your budget effectively.</p>
+                </div>
+              </div>
+            </article>
+            <!-- Bootstrap card-->
+            <article class="card card-custom card-corporate wow fadeInDown" data-wow-delay=".05s">
+              <div class="card-header" id="accordion1-heading-1" role="tab">
+                <div class="card-title"><a role="button" data-toggle="collapse" data-parent="#accordion1" href="#accordion1-collapse-1" aria-controls="accordion1-collapse-1" aria-expanded="true">Do you offer value engineering solutions?
+                    <div class="card-arrow"></div></a></div>
+              </div>
+              <div class="collapse show" id="accordion1-collapse-1" role="tabpanel" aria-labelledby="accordion1-heading-1">
+                <div class="card-body">
+                  <p>Yes, we analyze alternative designs and materials to optimize cost without compromising quality.</p>
+                </div>
+              </div>
+            </article>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="progress-linear-outer wow-outer">
+                    <!-- Linear progress bar-->
+                    <article class="progress-linear wow slideInDown" data-wow-delay=".05s">
+                      <div class="progress-header">
+                        <p>Electricity</p><span class="progress-value">95</span>
+                      </div>
+                      <div class="progress-bar-linear-wrap">
+                        <div class="progress-bar-linear"></div>
+                      </div>
+                    </article>
+        </div>
+        <div class="progress-linear-outer wow-outer">
+                    <!-- Linear progress bar-->
+                    <article class="progress-linear wow slideInDown" data-wow-delay=".1s">
+                      <div class="progress-header">
+                        <p>Plumbing</p><span class="progress-value">95</span>
+                      </div>
+                      <div class="progress-bar-linear-wrap">
+                        <div class="progress-bar-linear progress-red"></div>
+                      </div>
+                    </article>
+        </div>
+        <div class="progress-linear-outer wow-outer">
+                    <!-- Linear progress bar-->
+                    <article class="progress-linear wow slideInDown" data-wow-delay=".15s">
+                      <div class="progress-header">
+                        <p>Electronics</p><span class="progress-value">95</span>
+                      </div>
+                      <div class="progress-bar-linear-wrap">
+                        <div class="progress-bar-linear progress-blue"></div>
+                      </div>
+                    </article>
+        </div>
+        <div class="progress-linear-outer wow-outer">
+                    <!-- Linear progress bar-->
+                    <article class="progress-linear wow slideInDown" data-wow-delay=".2s">
+                      <div class="progress-header">
+                        <p>IT Support</p><span class="progress-value">95</span>
+                      </div>
+                      <div class="progress-bar-linear-wrap">
+                        <div class="progress-bar-linear progress-green"></div>
+                      </div>
+                    </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section-xs bg-gray-700 text-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-10 col-md-12">
+        <div class="box-cta-thin">
+          <h4 class="wow-outer"><span class="wow slideInRight">Looking for  <span class="text-italic">Quality MEP Desaining?</span> </span></h4>
+          <div class="wow-outer button-outer"><a class="button button-primary button-winona wow slideInLeft" href="#">Get in Touch</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Latest Blog Posts-->
+<section class="section section-lg bg-gray-100 text-center">
+  <div class="container">
+    <h3 class="section-title wow-outer"><span class="wow slideInDown">Latest Finish Projects</span></h3>
+    <div class="row row-50">
+      <div class="col-sm-6 col-lg-4 wow-outer">
+        <!-- Post Classic-->
+        <article class="post-classic wow slideInLeft"><a class="post-classic-media" href="#"><img src="{{asset('assets/images/sidebar-blog-1-370x264.jpg')}}" alt="" width="370" height="264"/></a>
+          <ul class="post-classic-meta">
+            <li><a class="button-winona" href="#">News</a></li>
+            <li>
+              <time datetime="2019">Apr 21, 2019 at 12:05 pm</time>
+            </li>
+          </ul>
+          <h4 class="post-classic-title"><a href="#">Top 10 Essential Photography Tips for Beginners</a></h4>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-4 wow-outer">
+        <!-- Post Classic-->
+        <article class="post-classic wow slideInLeft" data-wow-delay=".05s"><a class="post-classic-media" href="#"><img src="{{asset('assets/images/sidebar-blog-2-370x264.jpg')}}" alt="" width="370" height="264"/></a>
+          <ul class="post-classic-meta">
+            <li><a class="button-winona text-red" href="#">Innovations</a></li>
+            <li>
+              <time datetime="2019">Apr 21, 2019 at 12:05 pm</time>
+            </li>
+          </ul>
+          <h4 class="post-classic-title"><a href="#">Benefits of Using Drones in Aerial Photography</a></h4>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-4 wow-outer">
+        <!-- Post Classic-->
+        <article class="post-classic wow slideInLeft" data-wow-delay=".1s"><a class="post-classic-media" href="#"><img src="{{asset('assets/images/sidebar-blog-3-370x264.jpg')}}" alt="" width="370" height="264"/></a>
+          <ul class="post-classic-meta">
+            <li><a class="button-winona text-green" href="#">Tips</a></li>
+            <li>
+              <time datetime="2019">Apr 21, 2019 at 12:05 pm</time>
+            </li>
+          </ul>
+          <h4 class="post-classic-title"><a href="#">5 Ways to Get Great Photos Outside of the Studio</a></h4>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 @stop

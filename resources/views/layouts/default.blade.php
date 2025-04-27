@@ -29,15 +29,7 @@
 
 <body>
 
-  <!-- Preloader -->
-  <div id="preloader">
-      <div id="status" class="la-ball-triangle-path">
-          <div></div>
-          <div></div>
-          <div></div>
-      </div>
-  </div>
-  <!--End of Preloader-->
+  
 
   <!-- <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
       <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
@@ -46,14 +38,14 @@
       <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
   </div> -->
 
-  <div id="wrapper">
+  <div class="page">
     <!-- ======= Header ======= -->
 
 
     @if (Route::is('home'))
       @include('includes.headmenu')
     @else
-      @include('includes.headmenudetail', ['pages' => $pages])
+      @include('includes.headmenudetail')
     @endif 
 
     <main id="content">
@@ -62,7 +54,9 @@
       @yield('content')
       @yield('scripts')
       <div class="popup-container" id="popupContainer">
-            <a href="https://api.whatsapp.com/send?phone=6287818175969&text=&source=&data=" class="whatsApp" target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=62818688114&text=Hello&source=&data=" class="whatsApp" target="_blank">
+            <img src="{{asset('assets/images/whatsapp.png')}}" />
+            </a>
             <div class="popup-content" id="popupContent">
                 <img src="{{asset('assets/images/wa.png')}}" /><br />
                 Scan Me
@@ -78,6 +72,18 @@
     <!-- End Footer -->
  
   </div>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-logo"><img src="{{asset('assets/images/logo-default-176x28.png')}}" alt="" width="176" height="28" srcset="{{asset('assets/images/logo-default-352x56.png')}} 2x"/>
+    </div>
+    <div class="preloader-body">
+      <div id="loadingProgressG">
+        <div class="loadingProgressG" id="loadingProgressG_1"></div>
+      </div>
+    </div>
+  </div>
+  <!--End of Preloader-->
+  <div class="snackbars" id="form-output-global"></div>
   @include('includes.footerjs')
 
 </body>

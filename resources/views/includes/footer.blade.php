@@ -1,73 +1,45 @@
-<!--Content Section-->
-<div id="services" class="scrollto clearfix">
-
-<div class="row no-padding-bottom clearfix">
-
-
-    <!--Content Left Side-->
-    <div class="col-3">
-        <!--User Testimonial-->
-        <div class="section-heading">
-            <h2 class="section-title">Contact Us Now</h2>
-            <p class="section-subtitle">Jl. Batu Belig No.168, Seminyak, Kec. Kuta Utara, Kabupaten Badung, Bali 80361</p>
+<!-- Page Footer-->
+<footer class="section footer-standard bg-gray-700">
+    <div class="footer-standard-main">
+        <div class="container">
+        <div class="row row-50">
+            <div class="col-lg-4">
+            <div class="inset-right-1">
+                <h4>About Us</h4>
+                <p>At duaraka, we specialize in delivering innovative and reliable MEP solutions tailored to meet your unique needs. With our expertise in mechanical, electrical, and plumbing systems, we ensure efficiency, sustainability, and top-tier performance in every project.</p>
+            </div>
+            </div>
+            <div class="col-sm-6 col-md-5 col-lg-4">
+            <div class="box-1">
+                <h4>Contact Information</h4>
+                <ul class="list-sm">
+                <li class="object-inline"><span class="icon icon-md mdi mdi-map-marker text-gray-700"></span><a class="link-default" href="#">2130 Fulton Street <br> San Diego, CA 94117-1080 USA</a></li>
+                <li class="object-inline"><span class="icon icon-md mdi mdi-phone text-gray-700"></span><a class="link-default" href="tel:#">1-800-1234-678</a></li>
+                <li class="object-inline"><span class="icon icon-md mdi mdi-email text-gray-700"></span><a class="link-default" href="mailto:#">info@demolink.org</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-sm-6 col-md-7 col-lg-4">
+            <h4>Newsletter</h4>
+            <p>Sign up to my newsletter and be the first to know about the latest news, special offers, events, and discounts.</p>
+            <!-- RD Mailform-->
+            <form class="rd-form rd-mailform form-inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                <div class="form-wrap">
+                <input class="form-input" id="subscribe-form-2-email" type="email" name="email" >
+                <label class="form-label" for="subscribe-form-2-email">E-mail</label>
+                </div>
+                <div class="form-button">
+                <button class="button button-primary button-icon button-icon-only button-winona" type="submit" aria-label="submit"><span class="icon mdi mdi-email-outline"></span></button>
+                </div>
+            </form>
+            </div>
         </div>
-        <!-- End of Testimonial-->
-
-    </div>
-    <!--End Content Left Side-->
-
-    <!--Content of the Right Side-->
-    <div class="col-3">
-        <!--User Testimonial-->
-        <div class="section-heading">
-            <h2 class="section-title">  </h2>
-            <p class="section-subtitle">
-                <i class="fa fa-phone" aria-hidden="true"></i>       +62 361 4736549 
-            </p>
-            <p class="section-subtitle">
-                <i class="fa fa-whatsapp" aria-hidden="true"></i>      +62 878 1817 5969
-            </p>
-            <!-- <p class="section-subtitle">
-                <i class="fa fa-fax" aria-hidden="true"></i>       +62 361 887877
-            </p> -->
-            <p class="section-subtitle">
-                <i class="fa fa-envelope-open-o" aria-hidden="true"></i>   sales@baliawanvillas.com
-            </p>
         </div>
-        <!-- End of Testimonial-->
     </div>
-    <!--End Content Right Side-->
-
-    <div class="col-3">
-        <img src="{{asset('assets/images/logo-2.png')}}" alt="Landing Page"/>
-        <!--Social Icons in Footer-->
-        <ul class="col-2 social-icons">
-            <li>
-                <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
-                    <i class="fa fa-facebook fa-2x"></i><span>Facebook</span>
-                </a>
-            </li>
-            <li>
-                <a target="_blank" title="Twitter" href="http://www.twitter.com/username">
-                    <i class="fa fa-twitter fa-2x"></i><span>Twitter</span>
-                </a>
-            </li>
-            <li>
-                <a target="_blank" title="Instagram" href="http://www.instagram.com/theawanvillas">
-                    <i class="fa fa-instagram fa-2x"></i><span>Instagram</span>
-                </a>
-            </li>
-        </ul>
-        <!--End of Social Icons in Footer-->
+    <div class="container">
+        <div class="footer-standard-aside"><a class="brand" href="index.html"><img src="{{asset('assets/images/logo-inverse-176x28.png')}}" alt="" width="176" height="28" srcset="{{asset('assets/images/logo-inverse-352x56.png')}} 2x"/></a>
+        <!-- Rights-->
+        <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span><br class="d-sm-none"/></p>
+        </div>
     </div>
-
-</div>
-
-
-</div>
-<!--End of Content Section-->
-
-<div class="row clearfix">
-  <!-- <p id="copyright" class="col-2">Made with love by <a href="https://www.shapingrain.com">ShapingRain</a></p> -->
-  
-</div>
+</footer>

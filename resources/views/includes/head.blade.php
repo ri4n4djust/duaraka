@@ -1,28 +1,27 @@
-<meta charset="UTF-8">
-
-<!--Page Title-->
-<title>Duaraka</title>
-
-<!--Meta Keywords and Description-->
-<meta name="keywords" content="">
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-
-<!--Favicon-->
-<link rel="shortcut icon" href="{{asset('assets/images/favicon.ico')}}" title="Favicon"/>
-<!-- Main CSS Files -->
+<title>Duaraka MEP</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<link rel="apple-touch-icon" sizes="180x180" href="{{asset('apple-touch-icon.png')}}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{asset('favicon-32x32.png')}}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{asset('favicon-16x16.png')}}">
+<link rel="manifest" href="{{asset('site.webmanifest')}}">
+<!-- Stylesheets-->
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,700,800%7CIBM+Plex+Sans:200,300,400,400i,600,700">
+<link rel="stylesheet" href="{{asset('assets/css/bootstrap.css')}}">
+<link rel="stylesheet" href="{{asset('assets/css/fonts.css')}}">
 <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
-<!-- Namari Color CSS -->
-<link rel="stylesheet" href="{{asset('assets/css/namari-color.css')}}">
-<!--Icon Fonts - Font Awesome Icons-->
-<link rel="stylesheet" href="{{asset('assets/css/font-awesome.min.css')}}">
-<!-- Animate CSS-->
-<link href="{{asset('assets/css/animate.css')}}" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="{{asset('assets/css/zoomslider.css')}}" />
-<script type="text/javascript" src="{{asset('assets/js/modernizr-2.6.2.min.js')}}"></script>
-<!--Google Webfonts-->
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+<style>
+.ie-panel{
+  display: none;
+  background: #212121;
+  padding: 10px 0;
+  box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);
+  clear: both;
+  text-align:center;
+  position: relative;
+  z-index: 1;
+  } 
+html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}
+</style>
