@@ -15,7 +15,7 @@ class villaController extends Controller
 
         // var_dump($kamar[0]->foto);
         $promos = Promo::where('status', '1')->get();
-        $albums = DB::table('album')->get();
+        $albums = DB::table('albums')->get();
         $galeries = DB::table('galeri')->get();
         $slides = DB::table('slide')->get();
         return view('pages.home', compact('promos', 'albums', 'galeries', 'slides'));
@@ -44,7 +44,7 @@ class villaController extends Controller
     public function gallery(){
 
         // var_dump($kamar[0]->foto);
-        $albums = DB::table('album')->get();
+        $albums = DB::table('albums')->get();
         $galeries = DB::table('galeri')->get();
         $pages = Page::where('slug', 'gallery')->first();
         return view('pages.gallery', compact('albums', 'galeries', 'pages'));

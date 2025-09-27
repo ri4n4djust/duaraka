@@ -14,7 +14,7 @@ class galleryController extends Controller
     public function adminGallery(){
 
         $gallery = Gallery::all();
-        $albums = DB::table('album')->get();
+        $albums = DB::table('albums')->get();
         return view('admin.admin-gallery', compact('gallery', 'albums'));
     }   
     public function createGallery(){

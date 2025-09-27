@@ -16,8 +16,8 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'sqlite'),
-
+    // 'default' => env('DB_CONNECTION', 'sqlite'),
+    'default' => 'local', 'mysql',
     /*
     |--------------------------------------------------------------------------
     | Database Connections
@@ -30,6 +30,18 @@ return [
     */
 
     'connections' => [
+
+        'local' => [
+            'driver'    => 'mysql',
+            'host'      => '192.168.2.30',
+            'database'  => 'duaraka',
+            'username'  => 'root',
+            'password'  => 'Admin@123#',
+            'charset'   => 'latin1',
+            'collation' => 'latin1_general_ci',
+            'prefix'    => '',
+            'strict' => false,
+        ],
 
         'sqlite' => [
             'driver' => 'sqlite',
